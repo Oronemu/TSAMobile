@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:TSA.xcodeproj">
+   </FileRef>
+   <Group
+      location = "group:Core"
+      name = "Core">
+      <FileRef
+         location = "group:Common/Common.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:NetworkProvider/NetworkProvider.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:Platform/Platform.xcodeproj">
+      </FileRef>
+   </Group>
+   <Group
+      location = "group:Features"
+      name = "Features">
+      <FileRef
+         location = "group:Auth/Auth.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:Profile/Profile.xcodeproj">
+      </FileRef>
+   </Group>
+   <Group
+      location = "group:Tuist"
+      name = "Tuist">
+      <Group
+         location = "group:Dependencies"
+         name = "Dependencies">
+         <Group
+            location = "group:SwiftPackageManager"
+            name = "SwiftPackageManager">
+            <Group
+               location = "group:.build"
+               name = ".build">
+               <Group
+                  location = "group:checkouts"
+                  name = "checkouts">
+                  <FileRef
+                     location = "group:Swinject/Swinject.xcodeproj">
+                  </FileRef>
+               </Group>
+            </Group>
+         </Group>
+      </Group>
+   </Group>
+</Workspace>
