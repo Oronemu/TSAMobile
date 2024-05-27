@@ -23,7 +23,8 @@ let project = Project(
                sources: ["Source/**"],
                dependencies: [.external(name: "Swinject"),
                               .project(target: "NetworkProvider", path: .relativeToRoot("Core/NetworkProvider")),
-                              .project(target: "Common", path: .relativeToRoot("Core/Common"))],
+                              .project(target: "Common", path: .relativeToRoot("Core/Common")),
+                              .project(target: "AppUI", path: .relativeToRoot("Core/AppUI"))],
                settings: configSettings())
     ]
 )

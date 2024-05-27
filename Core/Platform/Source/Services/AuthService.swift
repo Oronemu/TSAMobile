@@ -6,11 +6,14 @@
 //
 
 import Foundation
+import Common
 
 public protocol AuthServiceProtocol {
-    func register(_ username: String, password: String) async
-    func login(_ username: String, password: String) async
-    func changePassword(old: String, new: String) async
+    func register(_ username: String, email: String, password: String) async throws
+    func login(_ username: String, password: String) async throws
+    func setLogStatus(status: Bool) 
+    func signout()
+    func isLogged() -> Bool
 }
 
 public class AuthService: AuthServiceProtocol {
@@ -21,15 +24,29 @@ public class AuthService: AuthServiceProtocol {
         self.authRepository = authRepository
     }
     
-    public func register(_ username: String, password: String) async {
+    public func isLogged() -> Bool {
+        guard let status = UserDefaultsManager.getValue(forKey: ConstStatus.logStatus) as? Bool else { return false }
+        return status
+    }
+    
+    public func register(_ username: String, email: String, password: String) async throws{
         
     }
     
-    public func login(_ username: String, password: String) async {
-        
+    public func login(_ username: String, password: String) async throws {
+        do {
+            try await authRepository.login(username, password: password)
+            setLogStatus(status: true)
+        } catch {
+            
+        }
     }
     
-    public func changePassword(old: String, new: String) async {
-        
+    public func signout() {
+        setLogStatus(status: false)
+    }
+    
+    public func setLogStatus(status: Bool) {
+        UserDefaultsManager.setValue(status, forKey: ConstStatus.logStatus)
     }
 }

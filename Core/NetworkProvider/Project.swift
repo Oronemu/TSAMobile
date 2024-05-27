@@ -21,7 +21,7 @@ let project = Project(
                bundleId: moduleBaseId,
                deploymentTarget: target,
                sources: ["Source/**"],
-               dependencies: [.project(target: "Common", path: .relativeToRoot("Core/Common"))],
+               dependencies: [/*.project(target: "Common", path: .relativeToRoot("Core/Common"))*/],
                settings: configSettings())
     ]
 )

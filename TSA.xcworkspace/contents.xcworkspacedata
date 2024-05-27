@@ -8,6 +8,9 @@
       location = "group:Core"
       name = "Core">
       <FileRef
+         location = "group:AppUI/AppUI.xcodeproj">
+      </FileRef>
+      <FileRef
          location = "group:Common/Common.xcodeproj">
       </FileRef>
       <FileRef
@@ -21,10 +24,22 @@
       location = "group:Features"
       name = "Features">
       <FileRef
-         location = "group:Auth/Auth.xcodeproj">
+         location = "group:Analyze/Analyze.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:Authentification/Authentification.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:Intro/Intro.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:Main/Main.xcodeproj">
       </FileRef>
       <FileRef
          location = "group:Profile/Profile.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:Splash/Splash.xcodeproj">
       </FileRef>
    </Group>
    <Group

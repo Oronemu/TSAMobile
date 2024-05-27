@@ -1,0 +1,456 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		08B853ED76F0438F628C02C7 /* Platform.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7728606354533AF9509C2B8F /* Platform.framework */; };
+		13B1A5072E1F9A6486D10CC2 /* EmptyVerifyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7770461C4C1FE3BB705E5497 /* EmptyVerifyViewModel.swift */; };
+		18BA18CE57BC6626BA32CC44 /* RegistryScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9767A26BFEAB3BE5CDA4663D /* RegistryScreen.swift */; };
+		251084F6262B5B41F92B2DCE /* VerifyScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F1F87DCD8D2434A7FF77C7 /* VerifyScreen.swift */; };
+		2D15AF554F5EEE3085BBE2BB /* AuthScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F763A30AC5434553A8082BB1 /* AuthScreen.swift */; };
+		4608F200731DE23F5C82DC31 /* AuthScreenAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E9B2B9BB26DF651CFE9125 /* AuthScreenAssembly.swift */; };
+		58DBBD4026E1A18E59DB66E9 /* VerifyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A25D00F9D164A387D7FD578 /* VerifyViewModel.swift */; };
+		6519E6FA5808FD0EDB96D621 /* EmptyConverterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5195331E74E0332E7BCCFBFD /* EmptyConverterViewModel.swift */; };
+		79E1350CC9A8933056EB0C82 /* AuthScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16B2A3268672D5DC0FABF64 /* AuthScreenViewModel.swift */; };
+		9AB4213772A6AB0B8EDAE353 /* EmptyAuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C096B8D92E0DA2DC082ECA5 /* EmptyAuthViewModel.swift */; };
+		DE5393C418754A9F12E68BEC /* RegistryScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528F0AD08F9E8498EB0793A9 /* RegistryScreenViewModel.swift */; };
+		EDEAC4BC411C99BB2FE5F97C /* AuthScreenFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F89D60824932A7A6231434 /* AuthScreenFactory.swift */; };
+		F8F798AD99BFAF1B1D9549BE /* AuthRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA7085FFAF062B1789C6A20 /* AuthRouter.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4BB20F39806B9E00BD3A2E16 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		04E9B2B9BB26DF651CFE9125 /* AuthScreenAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthScreenAssembly.swift; sourceTree = "<group>"; };
+		0C096B8D92E0DA2DC082ECA5 /* EmptyAuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyAuthViewModel.swift; sourceTree = "<group>"; };
+		2A25D00F9D164A387D7FD578 /* VerifyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyViewModel.swift; sourceTree = "<group>"; };
+		5195331E74E0332E7BCCFBFD /* EmptyConverterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyConverterViewModel.swift; sourceTree = "<group>"; };
+		528F0AD08F9E8498EB0793A9 /* RegistryScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistryScreenViewModel.swift; sourceTree = "<group>"; };
+		6F5529E5C904EAB000111F0C /* Authentification-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Authentification-Info.plist"; sourceTree = "<group>"; };
+		74F1F87DCD8D2434A7FF77C7 /* VerifyScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyScreen.swift; sourceTree = "<group>"; };
+		7728606354533AF9509C2B8F /* Platform.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Platform.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7770461C4C1FE3BB705E5497 /* EmptyVerifyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyVerifyViewModel.swift; sourceTree = "<group>"; };
+		9767A26BFEAB3BE5CDA4663D /* RegistryScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistryScreen.swift; sourceTree = "<group>"; };
+		C4C6B23CEE4396711D8A5204 /* Authentification.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Authentification.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D16B2A3268672D5DC0FABF64 /* AuthScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthScreenViewModel.swift; sourceTree = "<group>"; };
+		EFA7085FFAF062B1789C6A20 /* AuthRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRouter.swift; sourceTree = "<group>"; };
+		F3F89D60824932A7A6231434 /* AuthScreenFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthScreenFactory.swift; sourceTree = "<group>"; };
+		F763A30AC5434553A8082BB1 /* AuthScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthScreen.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0C5A876672D67044E118A3D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08B853ED76F0438F628C02C7 /* Platform.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		395211F1216678B6554487EB /* Project */ = {
+			isa = PBXGroup;
+			children = (
+				9B08CF56CAD169270EC0A6D9 /* Derived */,
+				F6E7A74FC91DDE5F48BCAE50 /* Source */,
+			);
+			name = Project;
+			sourceTree = "<group>";
+		};
+		72917083C9548680D09E223C /* AuthScreen */ = {
+			isa = PBXGroup;
+			children = (
+				F763A30AC5434553A8082BB1 /* AuthScreen.swift */,
+				D16B2A3268672D5DC0FABF64 /* AuthScreenViewModel.swift */,
+			);
+			path = AuthScreen;
+			sourceTree = "<group>";
+		};
+		7DD69068E5967A835E1EF255 /* VerifyScreen */ = {
+			isa = PBXGroup;
+			children = (
+				74F1F87DCD8D2434A7FF77C7 /* VerifyScreen.swift */,
+				2A25D00F9D164A387D7FD578 /* VerifyViewModel.swift */,
+			);
+			path = VerifyScreen;
+			sourceTree = "<group>";
+		};
+		9B08CF56CAD169270EC0A6D9 /* Derived */ = {
+			isa = PBXGroup;
+			children = (
+				A8F7894BB43BA1473D30F813 /* InfoPlists */,
+			);
+			path = Derived;
+			sourceTree = "<group>";
+		};
+		A8F7894BB43BA1473D30F813 /* InfoPlists */ = {
+			isa = PBXGroup;
+			children = (
+				6F5529E5C904EAB000111F0C /* Authentification-Info.plist */,
+			);
+			path = InfoPlists;
+			sourceTree = "<group>";
+		};
+		AFB0B88CB5F59C7CA78282DB /* RegistryScreen */ = {
+			isa = PBXGroup;
+			children = (
+				9767A26BFEAB3BE5CDA4663D /* RegistryScreen.swift */,
+				528F0AD08F9E8498EB0793A9 /* RegistryScreenViewModel.swift */,
+			);
+			path = RegistryScreen;
+			sourceTree = "<group>";
+		};
+		B349B689BD5FE9034DEDC1D0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BD51B50B6E73C79EB77CF665 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				0C096B8D92E0DA2DC082ECA5 /* EmptyAuthViewModel.swift */,
+				5195331E74E0332E7BCCFBFD /* EmptyConverterViewModel.swift */,
+				7770461C4C1FE3BB705E5497 /* EmptyVerifyViewModel.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		C78BEAAE705187E90626F182 = {
+			isa = PBXGroup;
+			children = (
+				395211F1216678B6554487EB /* Project */,
+				B349B689BD5FE9034DEDC1D0 /* Frameworks */,
+				E240D2A8A1FD31E19238FA42 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E240D2A8A1FD31E19238FA42 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C4C6B23CEE4396711D8A5204 /* Authentification.framework */,
+				7728606354533AF9509C2B8F /* Platform.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F6E7A74FC91DDE5F48BCAE50 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				72917083C9548680D09E223C /* AuthScreen */,
+				BD51B50B6E73C79EB77CF665 /* Mock */,
+				AFB0B88CB5F59C7CA78282DB /* RegistryScreen */,
+				7DD69068E5967A835E1EF255 /* VerifyScreen */,
+				EFA7085FFAF062B1789C6A20 /* AuthRouter.swift */,
+				04E9B2B9BB26DF651CFE9125 /* AuthScreenAssembly.swift */,
+				F3F89D60824932A7A6231434 /* AuthScreenFactory.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D8E271D762F95D6E41AC84B8 /* Authentification */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A52DF1C76E7DCD3867921447 /* Build configuration list for PBXNativeTarget "Authentification" */;
+			buildPhases = (
+				D4232830A11EF2FE5AF68888 /* Sources */,
+				E065ECC0BCE5ADDAC8D3FFD5 /* Resources */,
+				4BB20F39806B9E00BD3A2E16 /* Embed Frameworks */,
+				0C5A876672D67044E118A3D6 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Authentification;
+			productName = Authentification;
+			productReference = C4C6B23CEE4396711D8A5204 /* Authentification.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		43496D861D824CCAFC4C4734 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				TargetAttributes = {
+				};
+			};
+			buildConfigurationList = BEC16D5859884F3DEC6E6832 /* Build configuration list for PBXProject "Authentification" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = C78BEAAE705187E90626F182;
+			productRefGroup = E240D2A8A1FD31E19238FA42 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D8E271D762F95D6E41AC84B8 /* Authentification */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E065ECC0BCE5ADDAC8D3FFD5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D4232830A11EF2FE5AF68888 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8F798AD99BFAF1B1D9549BE /* AuthRouter.swift in Sources */,
+				2D15AF554F5EEE3085BBE2BB /* AuthScreen.swift in Sources */,
+				79E1350CC9A8933056EB0C82 /* AuthScreenViewModel.swift in Sources */,
+				4608F200731DE23F5C82DC31 /* AuthScreenAssembly.swift in Sources */,
+				EDEAC4BC411C99BB2FE5F97C /* AuthScreenFactory.swift in Sources */,
+				9AB4213772A6AB0B8EDAE353 /* EmptyAuthViewModel.swift in Sources */,
+				6519E6FA5808FD0EDB96D621 /* EmptyConverterViewModel.swift in Sources */,
+				13B1A5072E1F9A6486D10CC2 /* EmptyVerifyViewModel.swift in Sources */,
+				18BA18CE57BC6626BA32CC44 /* RegistryScreen.swift in Sources */,
+				DE5393C418754A9F12E68BEC /* RegistryScreenViewModel.swift in Sources */,
+				251084F6262B5B41F92B2DCE /* VerifyScreen.swift in Sources */,
+				58DBBD4026E1A18E59DB66E9 /* VerifyViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		02535E03CEA81D1E2CF09C52 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Derived/InfoPlists/Authentification-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rovkov.Authentification;
+				PRODUCT_NAME = Authentification;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		460AB8D283B6571DF42816E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		71A0C7FBA911BA0DDC920B80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E4183AA98CC925221CE9A4B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Derived/InfoPlists/Authentification-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rovkov.Authentification;
+				PRODUCT_NAME = Authentification;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A52DF1C76E7DCD3867921447 /* Build configuration list for PBXNativeTarget "Authentification" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02535E03CEA81D1E2CF09C52 /* Debug */,
+				E4183AA98CC925221CE9A4B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BEC16D5859884F3DEC6E6832 /* Build configuration list for PBXProject "Authentification" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				460AB8D283B6571DF42816E3 /* Debug */,
+				71A0C7FBA911BA0DDC920B80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 43496D861D824CCAFC4C4734 /* Project object */;
+}

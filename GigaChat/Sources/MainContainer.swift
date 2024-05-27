@@ -9,17 +9,20 @@ import Foundation
 import UIKit
 import SwiftUI
 import Swinject
+import Common
 
-import Auth
+import Authentification
 import Platform
+import Analyze
+import Intro
+import Main
+//import Splash
 
 public class MainContainer {
         
     fileprivate var container: Container!
     private var assembler: Assembler!
-    
-    // MARK: - initial
-    
+        
     public init()
     {
         container = Container()
@@ -29,12 +32,24 @@ public class MainContainer {
             ServiceAssembly(),
             RepositoryAssembly(),
             AuthScreenAssembly(),
+            AnalyzeScreenAssembly(),
+            IntroScreenAssembly(),
+            MainScreenAssembly()
+//            SplashScreenAssembly()
         ])
     }
     
     func auth() -> AnyView {
-        let factory = container.resolve(AuthScreenFactory.self)!
-        return factory.makeAuthView()
+        let introFactory = container.resolve(IntroScreenFactory.self)!
+        let mainFactory = container.resolve(MainScreenFactory.self)!
+        
+        let isLogged = UserDefaultsManager.getValue(forKey: ConstStatus.logStatus) as? Bool ?? false
+
+        if isLogged {
+            return mainFactory.makeMainScreen()
+        } else {
+            return introFactory.openIntroScreen()
+        }
     }
 }
 

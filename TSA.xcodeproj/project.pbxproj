@@ -9,14 +9,18 @@
 /* Begin PBXBuildFile section */
 		0E5F14A3F872393145FE0EF4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B16D08AF602B9AD375FF78B4 /* Preview Assets.xcassets */; };
 		27A6E7DE6F529DA466F181A4 /* Platform.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 329F70C43302B57DCAE2F213 /* Platform.framework */; };
+		2DA36FE4EADABF136F70352B /* Splash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC0BABE2F1131A3931B90D07 /* Splash.framework */; };
 		39477084362D4376DBC1F37D /* NetworkProvider.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B1A77B79CE6437DF5AE70449 /* NetworkProvider.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3F8C4A6F8EE81A97AE698310 /* Intro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D71407E6DE0EB467380795A /* Intro.framework */; };
+		46951299735C45380AB0314C /* Analyze.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF12AC78FB8613F69FDF81F7 /* Analyze.framework */; };
 		4B3C1930B5BA9812BAA4CD85 /* Platform.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 329F70C43302B57DCAE2F213 /* Platform.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		68EC3C5AC63B94BC3B51A79E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F65FDCAD08D6018523D743FD /* Assets.xcassets */; };
+		9914128D7F6BCA284DB4A8D8 /* Authentification.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC7FB7FB53C1D6BFD88BF60B /* Authentification.framework */; };
+		AE884C6C85680A56CF9F5004 /* Main.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1774E3E19FFA7875936F0FC5 /* Main.framework */; };
 		B45BA78829D2087C4FB5A0FB /* TuistAssets+TSA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8FBC79A507925374BC4C9C /* TuistAssets+TSA.swift */; };
 		D20FBCADE7CA73C3E5972774 /* TuistBundle+TSA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99796649E0749AE5FD9D4834 /* TuistBundle+TSA.swift */; };
 		E3A284F77F5A7EDE96FDEB68 /* GigaChatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F2D0720814A9064C7EFCA9 /* GigaChatApp.swift */; };
 		E5A394A10E170935D80AD76A /* MainContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57DEE0CA0E464A577C0A4D2D /* MainContainer.swift */; };
-		EBC663BE4B3B587BFB86D1D3 /* Auth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B6F1F016D4D63F9C40680C7 /* Auth.framework */; };
 		F710E737720882A9CBC2B193 /* Swinject.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 087589429F24F410E93B5597 /* Swinject.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FBB0E5FD180C4CA9B119D18E /* Profile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1E2F35E7D7401F2EBCAE5F0 /* Profile.framework */; };
 /* End PBXBuildFile section */
@@ -39,17 +43,21 @@
 
 /* Begin PBXFileReference section */
 		087589429F24F410E93B5597 /* Swinject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Swinject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1774E3E19FFA7875936F0FC5 /* Main.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Main.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		24C49BEC77E919EB35E72A97 /* GigaChat-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GigaChat-Info.plist"; sourceTree = "<group>"; };
+		2D71407E6DE0EB467380795A /* Intro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Intro.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E8FBC79A507925374BC4C9C /* TuistAssets+TSA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TuistAssets+TSA.swift"; sourceTree = "<group>"; };
 		329F70C43302B57DCAE2F213 /* Platform.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Platform.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		57DEE0CA0E464A577C0A4D2D /* MainContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContainer.swift; sourceTree = "<group>"; };
 		9768B1EB2F9555959873BC2C /* GigaChat.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = GigaChat.xcconfig; sourceTree = "<group>"; };
 		99796649E0749AE5FD9D4834 /* TuistBundle+TSA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TuistBundle+TSA.swift"; sourceTree = "<group>"; };
-		9B6F1F016D4D63F9C40680C7 /* Auth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Auth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B16D08AF602B9AD375FF78B4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B1A77B79CE6437DF5AE70449 /* NetworkProvider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NetworkProvider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1E2F35E7D7401F2EBCAE5F0 /* Profile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Profile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBCE46326EB3C91B3AD99659 /* TSA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TSA.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC0BABE2F1131A3931B90D07 /* Splash.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Splash.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC7FB7FB53C1D6BFD88BF60B /* Authentification.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Authentification.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF12AC78FB8613F69FDF81F7 /* Analyze.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Analyze.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5F2D0720814A9064C7EFCA9 /* GigaChatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GigaChatApp.swift; sourceTree = "<group>"; };
 		F65FDCAD08D6018523D743FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -59,9 +67,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EBC663BE4B3B587BFB86D1D3 /* Auth.framework in Frameworks */,
+				46951299735C45380AB0314C /* Analyze.framework in Frameworks */,
+				9914128D7F6BCA284DB4A8D8 /* Authentification.framework in Frameworks */,
+				3F8C4A6F8EE81A97AE698310 /* Intro.framework in Frameworks */,
+				AE884C6C85680A56CF9F5004 /* Main.framework in Frameworks */,
 				27A6E7DE6F529DA466F181A4 /* Platform.framework in Frameworks */,
 				FBB0E5FD180C4CA9B119D18E /* Profile.framework in Frameworks */,
+				2DA36FE4EADABF136F70352B /* Splash.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,10 +152,14 @@
 		CD984DB896201A980692C508 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9B6F1F016D4D63F9C40680C7 /* Auth.framework */,
+				DF12AC78FB8613F69FDF81F7 /* Analyze.framework */,
+				CC7FB7FB53C1D6BFD88BF60B /* Authentification.framework */,
+				2D71407E6DE0EB467380795A /* Intro.framework */,
+				1774E3E19FFA7875936F0FC5 /* Main.framework */,
 				B1A77B79CE6437DF5AE70449 /* NetworkProvider.framework */,
 				329F70C43302B57DCAE2F213 /* Platform.framework */,
 				C1E2F35E7D7401F2EBCAE5F0 /* Profile.framework */,
+				CC0BABE2F1131A3931B90D07 /* Splash.framework */,
 				087589429F24F410E93B5597 /* Swinject.framework */,
 				CBCE46326EB3C91B3AD99659 /* TSA.app */,
 			);

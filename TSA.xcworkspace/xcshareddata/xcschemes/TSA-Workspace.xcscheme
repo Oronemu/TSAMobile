@@ -14,10 +14,52 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CD1FF535BD66CAFC10C0E412"
-               BuildableName = "Auth.framework"
-               BlueprintName = "Auth"
-               ReferencedContainer = "container:Features/Auth/Auth.xcodeproj">
+               BlueprintIdentifier = "9A51EDE33372EA903477E3FE"
+               BuildableName = "Analyze.framework"
+               BlueprintName = "Analyze"
+               ReferencedContainer = "container:Features/Analyze/Analyze.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "5BC0568C9DB033534C40FD51"
+               BuildableName = "AppUI.framework"
+               BlueprintName = "AppUI"
+               ReferencedContainer = "container:Core/AppUI/AppUI.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "98E993F281F89DC03509D593"
+               BuildableName = "AppUI_AppUI.bundle"
+               BlueprintName = "AppUI_AppUI"
+               ReferencedContainer = "container:Core/AppUI/AppUI.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "D8E271D762F95D6E41AC84B8"
+               BuildableName = "Authentification.framework"
+               BlueprintName = "Authentification"
+               ReferencedContainer = "container:Features/Authentification/Authentification.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -32,6 +74,34 @@
                BuildableName = "Common.framework"
                BlueprintName = "Common"
                ReferencedContainer = "container:Core/Common/Common.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "9E8414F984A50FDC30B56D01"
+               BuildableName = "Intro.framework"
+               BlueprintName = "Intro"
+               ReferencedContainer = "container:Features/Intro/Intro.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "10BC0BAF427BB570BB3E5632"
+               BuildableName = "Main.framework"
+               BlueprintName = "Main"
+               ReferencedContainer = "container:Features/Main/Main.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -74,6 +144,20 @@
                BuildableName = "Profile.framework"
                BlueprintName = "Profile"
                ReferencedContainer = "container:Features/Profile/Profile.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "B281B9912FBE9374CDC0824D"
+               BuildableName = "Splash.framework"
+               BlueprintName = "Splash"
+               ReferencedContainer = "container:Features/Splash/Splash.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -127,10 +211,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "CD1FF535BD66CAFC10C0E412"
-            BuildableName = "Auth.framework"
-            BlueprintName = "Auth"
-            ReferencedContainer = "container:Features/Auth/Auth.xcodeproj">
+            BlueprintIdentifier = "9A51EDE33372EA903477E3FE"
+            BuildableName = "Analyze.framework"
+            BlueprintName = "Analyze"
+            ReferencedContainer = "container:Features/Analyze/Analyze.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </LaunchAction>
@@ -143,10 +227,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "CD1FF535BD66CAFC10C0E412"
-            BuildableName = "Auth.framework"
-            BlueprintName = "Auth"
-            ReferencedContainer = "container:Features/Auth/Auth.xcodeproj">
+            BlueprintIdentifier = "9A51EDE33372EA903477E3FE"
+            BuildableName = "Analyze.framework"
+            BlueprintName = "Analyze"
+            ReferencedContainer = "container:Features/Analyze/Analyze.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>
