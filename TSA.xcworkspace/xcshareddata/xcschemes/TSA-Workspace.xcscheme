@@ -154,20 +154,6 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B281B9912FBE9374CDC0824D"
-               BuildableName = "Splash.framework"
-               BlueprintName = "Splash"
-               ReferencedContainer = "container:Features/Splash/Splash.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
                BlueprintIdentifier = "589345361EDD5EBC786D0C14"
                BuildableName = "Swinject.framework"
                BlueprintName = "Swinject"

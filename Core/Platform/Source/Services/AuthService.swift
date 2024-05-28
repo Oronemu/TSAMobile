@@ -9,7 +9,7 @@ import Foundation
 import Common
 
 public protocol AuthServiceProtocol {
-    func register(_ username: String, email: String, password: String) async throws
+    func register(_ profile: Profile) async throws
     func login(_ username: String, password: String) async throws
     func setLogStatus(status: Bool) 
     func signout()
@@ -29,8 +29,12 @@ public class AuthService: AuthServiceProtocol {
         return status
     }
     
-    public func register(_ username: String, email: String, password: String) async throws{
-        
+    public func register(_ profile: Profile) async throws{
+        do {
+            try await authRepository.register(profile)
+        } catch {
+            throw error
+        }
     }
     
     public func login(_ username: String, password: String) async throws {
@@ -38,7 +42,7 @@ public class AuthService: AuthServiceProtocol {
             try await authRepository.login(username, password: password)
             setLogStatus(status: true)
         } catch {
-            
+            throw error
         }
     }
     

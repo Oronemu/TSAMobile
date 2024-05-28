@@ -38,31 +38,12 @@
       <FileRef
          location = "group:Profile/Profile.xcodeproj">
       </FileRef>
-      <FileRef
-         location = "group:Splash/Splash.xcodeproj">
-      </FileRef>
    </Group>
    <Group
-      location = "group:Tuist"
-      name = "Tuist">
-      <Group
-         location = "group:Dependencies"
-         name = "Dependencies">
-         <Group
-            location = "group:SwiftPackageManager"
-            name = "SwiftPackageManager">
-            <Group
-               location = "group:.build"
-               name = ".build">
-               <Group
-                  location = "group:checkouts"
-                  name = "checkouts">
-                  <FileRef
-                     location = "group:Swinject/Swinject.xcodeproj">
-                  </FileRef>
-               </Group>
-            </Group>
-         </Group>
-      </Group>
+      location = "container:"
+      name = "Dependencies">
+      <FileRef
+         location = "group:Tuist/Dependencies/SwiftPackageManager/.build/checkouts/Swinject/Swinject.xcodeproj">
+      </FileRef>
    </Group>
 </Workspace>

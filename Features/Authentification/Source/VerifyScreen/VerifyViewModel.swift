@@ -30,18 +30,18 @@ final class VerifyViewModel: BaseViewModel, VerifyViewModelProtocol {
     }
     
     func startTimer() {
-        timerTask?.cancel()
-         
-        timerTask = Task { [weak self] in
-            guard let self = self else { return }
-            
-            while self.remainingTime > 0 {
-                try? await Task.sleep(nanoseconds: 1_000_000_000)
-                
-                self.remainingTime -= 1
-                print(remainingTime)
-            }
-        }
+//        timerTask?.cancel()
+//         
+//        timerTask = Task { [weak self] in
+//            guard let self = self else { return }
+//            
+//            while self.remainingTime > 0 {
+//                try? await Task.sleep(nanoseconds: 1_000_000_000)
+//                
+//                self.remainingTime -= 1
+//                print(remainingTime)
+//            }
+//        }
      }
     
     func stopTimer() {

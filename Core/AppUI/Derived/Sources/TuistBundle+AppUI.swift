@@ -8,33 +8,33 @@ import Foundation
 private class BundleFinder {}
 
 extension Foundation.Bundle {
-    /// Since AppUI is a staticFramework, the bundle containing the resources is copied into the final product.
-    static let module: Bundle = {
-        let bundleName = "AppUI_AppUI"
+/// Since AppUI is a staticFramework, the bundle containing the resources is copied into the final product.
+static let module: Bundle = {
+    let bundleName = "AppUI_AppUI"
 
-        let candidates = [
-            Bundle.main.resourceURL,
-            Bundle(for: BundleFinder.self).resourceURL,
-            Bundle.main.bundleURL,
-        ]
+    let candidates = [
+        Bundle.main.resourceURL,
+        Bundle(for: BundleFinder.self).resourceURL,
+        Bundle.main.bundleURL,
+    ]
 
-        for candidate in candidates {
-            let bundlePath = candidate?.appendingPathComponent(bundleName + ".bundle")
-            if let bundle = bundlePath.flatMap(Bundle.init(url:)) {
-                return bundle
-            }
+    for candidate in candidates {
+        let bundlePath = candidate?.appendingPathComponent(bundleName + ".bundle")
+        if let bundle = bundlePath.flatMap(Bundle.init(url:)) {
+            return bundle
         }
-        fatalError("unable to find bundle named AppUI_AppUI")
-    }()
+    }
+    fatalError("unable to find bundle named AppUI_AppUI")
+}()
 }
 
 // MARK: - Objective-C Bundle Accessor
 
 @objc
 public class AppUIResources: NSObject {
-    @objc public class var bundle: Bundle {
-        return .module
-    }
+@objc public class var bundle: Bundle {
+    return .module
+}
 }
 // swiftlint:enable all
 // swiftformat:enable all

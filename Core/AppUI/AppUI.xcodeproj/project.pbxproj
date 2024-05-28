@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01FAF3D17E75AAAD28F8E095 /* TSAErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A2A8B9D817BE1940901022 /* TSAErrorView.swift */; };
 		255A7C1498B4C095D3AB4267 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B33F872632917940A9CA8D /* CustomTextField.swift */; };
 		3538BBE00C03A8BB8A6DBCAB /* CodeInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89057E0EBBE71D0BEF70B019 /* CodeInputView.swift */; };
 		3ED8A3F1CA3E041198614593 /* TuistBundle+AppUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5984B1082B604F8887812B60 /* TuistBundle+AppUI.swift */; };
@@ -63,6 +64,7 @@
 		5984B1082B604F8887812B60 /* TuistBundle+AppUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TuistBundle+AppUI.swift"; sourceTree = "<group>"; };
 		66CFF703D25952CC38705F55 /* CustomNavigationLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationLink.swift; sourceTree = "<group>"; };
 		6A565122801331D6E7452256 /* TuistAssets+AppUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TuistAssets+AppUI.swift"; sourceTree = "<group>"; };
+		82A2A8B9D817BE1940901022 /* TSAErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSAErrorView.swift; sourceTree = "<group>"; };
 		87D1D6EEE90EB8D9B8A7DF36 /* Swinject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Swinject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		89057E0EBBE71D0BEF70B019 /* CodeInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeInputView.swift; sourceTree = "<group>"; };
 		AA85BBEA1DF43208A3CAAD3D /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
@@ -160,6 +162,7 @@
 				66CFF703D25952CC38705F55 /* CustomNavigationLink.swift */,
 				31B33F872632917940A9CA8D /* CustomTextField.swift */,
 				259B93C7DD23950C152267F4 /* SecureTextField.swift */,
+				82A2A8B9D817BE1940901022 /* TSAErrorView.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -230,7 +233,7 @@
 				};
 			};
 			buildConfigurationList = C29018DF7153B8BB418AC934 /* Build configuration list for PBXProject "AppUI" */;
-			compatibilityVersion = "Xcode 13.0";
+			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -279,6 +282,7 @@
 				483E07E628B9F3F232F3F28F /* CustomNavigationLink.swift in Sources */,
 				255A7C1498B4C095D3AB4267 /* CustomTextField.swift in Sources */,
 				AE44E155056DDF11CE721E23 /* SecureTextField.swift in Sources */,
+				01FAF3D17E75AAAD28F8E095 /* TSAErrorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -12,7 +12,7 @@ public struct Profile: Decodable {
     public init() {}
     
     public var username: String = ""
-    public var name: String = ""
+    public var fullName: String = ""
     public var password: String = ""
     public var phoneNumber: String = ""
     public var email: String = ""

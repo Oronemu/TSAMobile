@@ -25,7 +25,6 @@ struct IntroView<ViewModel: IntroScreenViewModelProtocol>: View {
         if showRegistrationView {
           ZStack {
             viewModel.openRegistration()
-
           }
         } else {
           ZStack {

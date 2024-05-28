@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-public struct CustomNavigationLink<Destination: View>: View {
+public struct TSANavigationLink<Destination: View>: View {
     
     private var placeholder: String
     private var destination: Destination
@@ -32,5 +32,5 @@ public struct CustomNavigationLink<Destination: View>: View {
 
 
 #Preview {
-    CustomNavigationLink(placeholder: "", destination: EmptyView())
+    TSANavigationLink(placeholder: "", destination: EmptyView())
 }

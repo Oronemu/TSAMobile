@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-public struct CodeInputView: View {
+public struct TSACodeInputView: View {
     @State private var code: [String] = Array(repeating: "", count: 6)
     @FocusState private var focusedField: Int?
     
@@ -48,5 +48,5 @@ public struct CodeInputView: View {
 
 
 #Preview {
-    CodeInputView()
+    TSACodeInputView()
 }

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 55;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,15 +11,14 @@
 		152700F985F24BABEEF982C3 /* ProfileRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0192E8037A7DB6AA1C8CF15 /* ProfileRepository.swift */; };
 		1D456B4FBF2CF7CB22DEE5E0 /* AnalyzeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B90847FBA720D38C61FABD6 /* AnalyzeRepository.swift */; };
 		223F012C2E2BF00D229787A0 /* DataBaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC166E3516E4D49A22C7309D /* DataBaseManager.swift */; };
+		2C839B512C0566FD008E37B8 /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C839B502C0566FD008E37B8 /* Token.swift */; };
 		3D69CF95AAF1E1946FD00492 /* Swinject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 083D73721F8F4852F13FC81B /* Swinject.framework */; };
-		4F6D3E427D12D2ED7923BC65 /* CreateUserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA44323767BEFE312EB51496 /* CreateUserRequest.swift */; };
 		501C59C840728D2D913C7886 /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2169FB33BEA85394A7E9665C /* Common.framework */; };
 		503A287572C540F84D5E260D /* AppUI_AppUI.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3CC9363DC9D38FCA0F23EE03 /* AppUI_AppUI.bundle */; };
 		526010BEB2223DF087FC589F /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502793BAFCF055B50ED41EEA /* Profile.swift */; };
 		587AE8A58BBE420977F77B89 /* NetworkProvider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 662B808B95DA928A36C8C212 /* NetworkProvider.framework */; };
 		73269FBACC8FDBFE89D683AB /* RepositoriesAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108F144BFB9259772A0BDF0A /* RepositoriesAssembly.swift */; };
 		8C000A01ECA4D73ACE7979CA /* IntroModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9993CA588E458B5AF979F0 /* IntroModel.swift */; };
-		9897B21F96881CF21DE98157 /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE91969E22C4BE82860DE334 /* ErrorResponse.swift */; };
 		A8B845D4B37A7B7685E13D01 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9318D5B4FF8A2A0B09C58B /* AuthService.swift */; };
 		AF510C4F137775F85B7C7913 /* KeyChainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B914D9CEF46F9E367BF245B4 /* KeyChainManager.swift */; };
 		C3C47AF316F1C0E4A4A9C1A2 /* BaseRepositories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803B6248D7879EE5EBC2D255 /* BaseRepositories.swift */; };
@@ -56,6 +55,7 @@
 		083D73721F8F4852F13FC81B /* Swinject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Swinject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		108F144BFB9259772A0BDF0A /* RepositoriesAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesAssembly.swift; sourceTree = "<group>"; };
 		2169FB33BEA85394A7E9665C /* Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C839B502C0566FD008E37B8 /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
 		3C9993CA588E458B5AF979F0 /* IntroModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroModel.swift; sourceTree = "<group>"; };
 		3CC9363DC9D38FCA0F23EE03 /* AppUI_AppUI.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppUI_AppUI.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DC42DB5FEAEA4624A127B8B /* Platform.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Platform.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -69,9 +69,7 @@
 		9C9318D5B4FF8A2A0B09C58B /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		A0192E8037A7DB6AA1C8CF15 /* ProfileRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileRepository.swift; sourceTree = "<group>"; };
 		A704BFAA741B4814CBD41716 /* Platform-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Platform-Info.plist"; sourceTree = "<group>"; };
-		AE91969E22C4BE82860DE334 /* ErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
 		B914D9CEF46F9E367BF245B4 /* KeyChainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChainManager.swift; sourceTree = "<group>"; };
-		CA44323767BEFE312EB51496 /* CreateUserRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUserRequest.swift; sourceTree = "<group>"; };
 		D604282BB5C18684FC15F626 /* AuthRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRepository.swift; sourceTree = "<group>"; };
 		DC166E3516E4D49A22C7309D /* DataBaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBaseManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -117,9 +115,9 @@
 		294DA6321F739C119CCC20A7 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				E5A0EEC9FADEFC7280B736F6 /* DTO */,
 				3C9993CA588E458B5AF979F0 /* IntroModel.swift */,
 				502793BAFCF055B50ED41EEA /* Profile.swift */,
+				2C839B502C0566FD008E37B8 /* Token.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -194,15 +192,6 @@
 			path = Derived;
 			sourceTree = "<group>";
 		};
-		E5A0EEC9FADEFC7280B736F6 /* DTO */ = {
-			isa = PBXGroup;
-			children = (
-				CA44323767BEFE312EB51496 /* CreateUserRequest.swift */,
-				AE91969E22C4BE82860DE334 /* ErrorResponse.swift */,
-			);
-			path = DTO;
-			sourceTree = "<group>";
-		};
 		F5FC094F5E304CB5B7D77B67 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
@@ -243,11 +232,9 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
-				TargetAttributes = {
-				};
 			};
 			buildConfigurationList = 8C9E4E30271AFBB88A4F3EB5 /* Build configuration list for PBXProject "Platform" */;
-			compatibilityVersion = "Xcode 13.0";
+			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -282,8 +269,6 @@
 			files = (
 				73269FBACC8FDBFE89D683AB /* RepositoriesAssembly.swift in Sources */,
 				CCD62E75FBE1A768DF575C41 /* ServiceAssembly.swift in Sources */,
-				4F6D3E427D12D2ED7923BC65 /* CreateUserRequest.swift in Sources */,
-				9897B21F96881CF21DE98157 /* ErrorResponse.swift in Sources */,
 				8C000A01ECA4D73ACE7979CA /* IntroModel.swift in Sources */,
 				526010BEB2223DF087FC589F /* Profile.swift in Sources */,
 				1D456B4FBF2CF7CB22DEE5E0 /* AnalyzeRepository.swift in Sources */,
@@ -293,6 +278,7 @@
 				152700F985F24BABEEF982C3 /* ProfileRepository.swift in Sources */,
 				A8B845D4B37A7B7685E13D01 /* AuthService.swift in Sources */,
 				AF510C4F137775F85B7C7913 /* KeyChainManager.swift in Sources */,
+				2C839B512C0566FD008E37B8 /* Token.swift in Sources */,
 				014313695D59D075D2FB10C7 /* UserDefaultsManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

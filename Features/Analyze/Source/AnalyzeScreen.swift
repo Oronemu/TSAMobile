@@ -39,7 +39,7 @@ struct AnalyzeScreen<ViewModel: AnalyzeViewModelProtocol>: View {
                 
                 Spacer()
         
-                CustomButton(placeholder: "Загрузить") {
+                TSAButton(placeholder: "Загрузить") {
                     showingFilePicker = true
                 }
             }

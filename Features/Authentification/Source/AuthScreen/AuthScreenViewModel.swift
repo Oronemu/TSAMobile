@@ -12,13 +12,17 @@ import Common
 import SwiftUI
 
 protocol AuthScreenViewModelProtocol: BaseViewModelProtocol {
-   
+    var name: String { get set }
+    var password: String { get set }
     func login(username: String, password: String) async throws
     
     func openMain() -> AnyView?
 }
 
 final class AuthScreenViewModel: BaseViewModel, AuthScreenViewModelProtocol {
+    
+    @Published var name: String = ""
+    @Published var password: String = ""
     
     private var service: AuthServiceProtocol
     var router: AuthRouter?
@@ -39,7 +43,9 @@ final class AuthScreenViewModel: BaseViewModel, AuthScreenViewModelProtocol {
     }
     
     func openMain() -> AnyView? {
-        service.setLogStatus(status: true)
+        Task {
+            await self.login(username: name, password: password)
+        }
         return router?.openMain()
     }
 }

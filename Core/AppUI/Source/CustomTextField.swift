@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-public struct CustomTextField: View {
+public struct TSATextField: View {
     
     var placeholder: String
     @Binding var value: String
@@ -31,5 +31,5 @@ public struct CustomTextField: View {
 }
 
 #Preview {
-    CustomTextField(placeholder: "Имя", value: .constant(""))
+    TSATextField(placeholder: "Имя", value: .constant(""))
 }

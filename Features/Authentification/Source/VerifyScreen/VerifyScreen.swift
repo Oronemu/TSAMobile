@@ -25,11 +25,11 @@ struct VerifyScreen<ViewModel: VerifyViewModelProtocol>: View {
                 Text("Введи код подтверждения, отправленный на указанную электронную почту")
                     .foregroundStyle(.gray)
                 
-                CodeInputView()
+                TSACodeInputView()
                 
                 Text("Отправить повторно через \(viewModel.remainingTime) секунд")
                 
-                CustomButton(placeholder: "Подтвердить") {
+                TSAButton(placeholder: "Подтвердить") {
                     viewModel.redeemCode()
                 }
                 

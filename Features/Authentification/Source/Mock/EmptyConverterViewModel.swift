@@ -8,8 +8,10 @@
 import Foundation
 import Common
 import SwiftUI
+import Platform
 
 class EmptyRegistryViewModel: BaseViewModel, RegistryScreenViewModelProtocol {
+    var profile: Profile = .init()
     
     func openVerify() -> AnyView? {
         return nil

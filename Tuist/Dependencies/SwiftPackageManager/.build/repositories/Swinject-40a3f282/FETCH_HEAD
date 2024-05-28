@@ -1,5 +1,6 @@
 4c5fda41c35ef914338a6c3dbe5ff4f61800c964	not-for-merge	branch '3.0' of https://github.com/Swinject/Swinject
-4bce92a5e55c71c940c314e64ed98b82486e5446	not-for-merge	branch 'master' of https://github.com/Swinject/Swinject
+487f0162b724113afdf558f6656610822765c603	not-for-merge	branch 'master' of https://github.com/Swinject/Swinject
+c4bf5131c6ef12d717cec9639c0c35622787d3c4	not-for-merge	branch 'maxim/expose-graph' of https://github.com/Swinject/Swinject
 999921eab57e1da73d0971508410effb5e0654b9	not-for-merge	'refs/pull/100/head' of https://github.com/Swinject/Swinject
 a401d2ad1ea56897de2c3453b65383b9b4c6d7ee	not-for-merge	'refs/pull/101/head' of https://github.com/Swinject/Swinject
 ec5730399600bea1cc6f854294fe7b47a9300b68	not-for-merge	'refs/pull/102/head' of https://github.com/Swinject/Swinject
@@ -253,7 +254,6 @@ daec396387832831e435586b69f9f25e8414cf51	not-for-merge	'refs/pull/557/head' of h
 978539701666b423d745f223c416f1a38a27451e	not-for-merge	'refs/pull/564/head' of https://github.com/Swinject/Swinject
 54eea0bdbf4b9def81f9db38d913b978fb8b083c	not-for-merge	'refs/pull/564/merge' of https://github.com/Swinject/Swinject
 284579a847a3277a694f44495af6eca19927053d	not-for-merge	'refs/pull/565/head' of https://github.com/Swinject/Swinject
-4e8c2d3e48777eaceb76227eb17d1e6482a6fa55	not-for-merge	'refs/pull/565/merge' of https://github.com/Swinject/Swinject
 863ee4d1a9eb201715f14cf10646698e3e537e59	not-for-merge	'refs/pull/58/head' of https://github.com/Swinject/Swinject
 2ed5f84316e5f4c305b8e7d0d50466b9fa945930	not-for-merge	'refs/pull/61/head' of https://github.com/Swinject/Swinject
 c1046531ec89b57d4eac74ae41244e8321a61bd3	not-for-merge	'refs/pull/62/head' of https://github.com/Swinject/Swinject

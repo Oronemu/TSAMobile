@@ -1,47 +1,40 @@
 {
-  "externalDependencies" : [
-    "ios",
-    {
-      "Swinject" : [
-        {
-          "project" : {
-            "path" : "\/Users\/ivan\/Desktop\/TSAMOBILE\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/Swinject",
-            "target" : "Swinject"
-          }
+  "externalDependencies" : {
+    "Swinject-Dynamic" : [
+      {
+        "project" : {
+          "path" : "\/Users\/ivan\/Desktop\/TSAMOBILE\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/Swinject",
+          "target" : "Swinject"
         }
-      ],
-      "Swinject-Dynamic" : [
-        {
-          "project" : {
-            "path" : "\/Users\/ivan\/Desktop\/TSAMOBILE\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/Swinject",
-            "target" : "Swinject"
-          }
+      }
+    ],
+    "Swinject" : [
+      {
+        "project" : {
+          "target" : "Swinject",
+          "path" : "\/Users\/ivan\/Desktop\/TSAMOBILE\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/Swinject"
         }
-      ]
-    }
-  ],
+      }
+    ]
+  },
   "externalProjects" : [
     "\/Users\/ivan\/Desktop\/TSAMOBILE\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/Swinject",
     {
-      "packages" : [
+      "xcodeProjPath" : "\/Users\/ivan\/Desktop\/TSAMOBILE\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/Swinject\/Swinject.xcodeproj",
+      "schemes" : [
 
       ],
-      "xcodeProjPath" : "\/Users\/ivan\/Desktop\/TSAMOBILE\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/Swinject\/Swinject.xcodeproj",
-      "settings" : {
-        "defaultSettings" : {
-          "recommended" : {
-            "excluding" : [
+      "additionalFiles" : [
 
-            ]
-          }
-        },
+      ],
+      "settings" : {
         "base" : {
 
         },
         "configurations" : [
           {
-            "name" : "Release",
-            "variant" : "release"
+            "variant" : "release",
+            "name" : "Release"
           },
           {
             "settings" : {
@@ -57,104 +50,37 @@
 
             }
           }
-        ]
-      },
-      "isExternal" : true,
-      "path" : "\/Users\/ivan\/Desktop\/TSAMOBILE\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/Swinject",
-      "options" : {
-        "disableBundleAccessors" : false,
-        "disableSynthesizedResourceAccessors" : true,
-        "automaticSchemesOptions" : {
-          "disabled" : {
+        ],
+        "defaultSettings" : {
+          "recommended" : {
+            "excluding" : [
 
+            ]
           }
         },
-        "disableShowEnvironmentVarsInScriptPhases" : false,
-        "textSettings" : {
+        "baseDebug" : {
 
         }
       },
-      "schemes" : [
-
-      ],
-      "sourceRootPath" : "\/Users\/ivan\/Desktop\/TSAMOBILE\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/Swinject",
-      "additionalFiles" : [
-
-      ],
+      "name" : "Swinject",
       "filesGroup" : {
         "group" : {
           "name" : "Project"
         }
       },
-      "resourceSynthesizers" : [
-        {
-          "template" : {
-            "defaultTemplate" : {
-              "_0" : "Strings"
-            }
-          },
-          "extensions" : [
-            "strings",
-            "stringsdict"
-          ],
-          "parser" : "strings"
-        },
-        {
-          "extensions" : [
-            "xcassets"
-          ],
-          "parser" : "assets",
-          "template" : {
-            "defaultTemplate" : {
-              "_0" : "Assets"
-            }
-          }
-        },
-        {
-          "template" : {
-            "defaultTemplate" : {
-              "_0" : "Plists"
-            }
-          },
-          "parser" : "plists",
-          "extensions" : [
-            "plist"
-          ]
-        },
-        {
-          "parser" : "fonts",
-          "extensions" : [
-            "otf",
-            "ttc",
-            "ttf"
-          ],
-          "template" : {
-            "defaultTemplate" : {
-              "_0" : "Fonts"
-            }
-          }
-        }
+      "isExternal" : true,
+      "packages" : [
+
       ],
-      "name" : "Swinject",
       "targets" : [
         {
-          "scripts" : [
+          "product" : "framework",
+          "environmentVariables" : {
 
-          ],
-          "playgrounds" : [
-
-          ],
-          "rawScriptBuildPhases" : [
-
-          ],
-          "productName" : "Swinject",
-          "prune" : false,
-          "dependencies" : [
-
-          ],
-          "copyFiles" : [
-
-          ],
+          },
+          "deploymentTargets" : {
+            "iOS" : "12.0"
+          },
           "infoPlist" : {
             "extendingDefault" : {
               "with" : {
@@ -162,58 +88,67 @@
               }
             }
           },
-          "destinations" : [
-            "iPad",
-            "appleVisionWithiPadDesign",
-            "macWithiPadDesign",
-            "iPhone",
-            "macCatalyst"
+          "name" : "Swinject",
+          "resources" : [
+
           ],
           "additionalFiles" : [
 
           ],
-          "resources" : [
-
-          ],
-          "product" : "framework",
-          "bundleId" : "Swinject",
-          "name" : "Swinject",
           "sources" : [
-            {
-              "path" : "\/Users\/ivan\/Desktop\/TSAMOBILE\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/Swinject\/Sources\/Container.TypeForwarding.swift"
-            },
-            {
-              "path" : "\/Users\/ivan\/Desktop\/TSAMOBILE\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/Swinject\/Sources\/InstanceStorage.swift"
-            },
-            {
-              "path" : "\/Users\/ivan\/Desktop\/TSAMOBILE\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/Swinject\/Sources\/Container.Logging.swift"
-            },
-            {
-              "path" : "\/Users\/ivan\/Desktop\/TSAMOBILE\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/Swinject\/Sources\/ServiceKey.swift"
-            },
-            {
-              "path" : "\/Users\/ivan\/Desktop\/TSAMOBILE\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/Swinject\/Sources\/_Resolver.swift"
-            },
             {
               "path" : "\/Users\/ivan\/Desktop\/TSAMOBILE\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/Swinject\/Sources\/RecursiveLock.swift"
             },
             {
-              "path" : "\/Users\/ivan\/Desktop\/TSAMOBILE\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/Swinject\/Sources\/Container.swift"
-            },
-            {
-              "path" : "\/Users\/ivan\/Desktop\/TSAMOBILE\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/Swinject\/Sources\/DebugHelper.swift"
-            },
-            {
-              "path" : "\/Users\/ivan\/Desktop\/TSAMOBILE\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/Swinject\/Sources\/Resolver.swift"
-            },
-            {
-              "path" : "\/Users\/ivan\/Desktop\/TSAMOBILE\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/Swinject\/Sources\/GraphIdentifier.swift"
+              "path" : "\/Users\/ivan\/Desktop\/TSAMOBILE\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/Swinject\/Sources\/Assembler.swift"
             },
             {
               "path" : "\/Users\/ivan\/Desktop\/TSAMOBILE\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/Swinject\/Sources\/Assembly.swift"
             },
             {
+              "path" : "\/Users\/ivan\/Desktop\/TSAMOBILE\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/Swinject\/Sources\/UnavailableItems.swift"
+            },
+            {
+              "path" : "\/Users\/ivan\/Desktop\/TSAMOBILE\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/Swinject\/Sources\/_Resolver.swift"
+            },
+            {
+              "path" : "\/Users\/ivan\/Desktop\/TSAMOBILE\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/Swinject\/Sources\/Container.TypeForwarding.swift"
+            },
+            {
+              "path" : "\/Users\/ivan\/Desktop\/TSAMOBILE\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/Swinject\/Sources\/Container.swift"
+            },
+            {
+              "path" : "\/Users\/ivan\/Desktop\/TSAMOBILE\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/Swinject\/Sources\/Behavior.swift"
+            },
+            {
+              "path" : "\/Users\/ivan\/Desktop\/TSAMOBILE\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/Swinject\/Sources\/FunctionType.swift"
+            },
+            {
+              "path" : "\/Users\/ivan\/Desktop\/TSAMOBILE\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/Swinject\/Sources\/InstanceWrapper.swift"
+            },
+            {
+              "path" : "\/Users\/ivan\/Desktop\/TSAMOBILE\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/Swinject\/Sources\/Container.Logging.swift"
+            },
+            {
+              "path" : "\/Users\/ivan\/Desktop\/TSAMOBILE\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/Swinject\/Sources\/Resolver.swift"
+            },
+            {
+              "path" : "\/Users\/ivan\/Desktop\/TSAMOBILE\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/Swinject\/Sources\/ServiceEntry.swift"
+            },
+            {
               "path" : "\/Users\/ivan\/Desktop\/TSAMOBILE\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/Swinject\/Sources\/ServiceEntry.TypeForwarding.swift"
+            },
+            {
+              "path" : "\/Users\/ivan\/Desktop\/TSAMOBILE\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/Swinject\/Sources\/InstanceStorage.swift"
+            },
+            {
+              "path" : "\/Users\/ivan\/Desktop\/TSAMOBILE\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/Swinject\/Sources\/DebugHelper.swift"
+            },
+            {
+              "path" : "\/Users\/ivan\/Desktop\/TSAMOBILE\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/Swinject\/Sources\/ServiceKey.swift"
+            },
+            {
+              "path" : "\/Users\/ivan\/Desktop\/TSAMOBILE\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/Swinject\/Sources\/GraphIdentifier.swift"
             },
             {
               "path" : "\/Users\/ivan\/Desktop\/TSAMOBILE\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/Swinject\/Sources\/Container.Arguments.swift"
@@ -223,40 +158,57 @@
             },
             {
               "path" : "\/Users\/ivan\/Desktop\/TSAMOBILE\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/Swinject\/Sources\/ObjectScope.Standard.swift"
-            },
-            {
-              "path" : "\/Users\/ivan\/Desktop\/TSAMOBILE\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/Swinject\/Sources\/UnavailableItems.swift"
-            },
-            {
-              "path" : "\/Users\/ivan\/Desktop\/TSAMOBILE\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/Swinject\/Sources\/Assembler.swift"
-            },
-            {
-              "path" : "\/Users\/ivan\/Desktop\/TSAMOBILE\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/Swinject\/Sources\/InstanceWrapper.swift"
-            },
-            {
-              "path" : "\/Users\/ivan\/Desktop\/TSAMOBILE\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/Swinject\/Sources\/FunctionType.swift"
-            },
-            {
-              "path" : "\/Users\/ivan\/Desktop\/TSAMOBILE\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/Swinject\/Sources\/Behavior.swift"
-            },
-            {
-              "path" : "\/Users\/ivan\/Desktop\/TSAMOBILE\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/Swinject\/Sources\/ServiceEntry.swift"
             }
           ],
-          "environment" : {
+          "rawScriptBuildPhases" : [
 
-          },
+          ],
+          "copyFiles" : [
+
+          ],
+          "bundleId" : "Swinject",
+          "prune" : false,
+          "mergeable" : false,
+          "productName" : "Swinject",
+          "buildRules" : [
+
+          ],
           "launchArguments" : [
 
           ],
-          "buildRules" : [
+          "destinations" : [
+            "macWithiPadDesign",
+            "appleVisionWithiPadDesign",
+            "iPhone",
+            "iPad"
+          ],
+          "mergedBinaryType" : {
+            "disabled" : {
+
+            }
+          },
+          "coreDataModels" : [
+
+          ],
+          "scripts" : [
+
+          ],
+          "playgrounds" : [
+
+          ],
+          "filesGroup" : {
+            "group" : {
+              "name" : "Project"
+            }
+          },
+          "dependencies" : [
 
           ],
           "settings" : {
             "configurations" : [
               {
-                "name" : "Release",
-                "variant" : "release"
+                "variant" : "release",
+                "name" : "Release"
               },
               {
                 "settings" : {
@@ -264,8 +216,8 @@
                 }
               },
               {
-                "name" : "Debug",
-                "variant" : "debug"
+                "variant" : "debug",
+                "name" : "Debug"
               },
               {
                 "settings" : {
@@ -273,53 +225,18 @@
                 }
               }
             ],
+            "baseDebug" : {
+
+            },
             "base" : {
-              "CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER" : {
+              "ENABLE_STRICT_OBJC_MSGSEND" : {
                 "string" : {
                   "_0" : "NO"
-                }
-              },
-              "GCC_PREPROCESSOR_DEFINITIONS" : {
-                "array" : {
-                  "_0" : [
-                    "$(inherited)",
-                    "SWIFT_PACKAGE=1"
-                  ]
-                }
-              },
-              "USE_HEADERMAP" : {
-                "string" : {
-                  "_0" : "NO"
-                }
-              },
-              "GCC_NO_COMMON_BLOCKS" : {
-                "string" : {
-                  "_0" : "NO"
-                }
-              },
-              "CLANG_ENABLE_OBJC_WEAK" : {
-                "string" : {
-                  "_0" : "NO"
-                }
-              },
-              "GCC_WARN_INHIBIT_ALL_WARNINGS" : {
-                "string" : {
-                  "_0" : "YES"
-                }
-              },
-              "ALWAYS_SEARCH_USER_PATHS" : {
-                "string" : {
-                  "_0" : "YES"
                 }
               },
               "SWIFT_SUPPRESS_WARNINGS" : {
                 "string" : {
                   "_0" : "YES"
-                }
-              },
-              "SWIFT_ACTIVE_COMPILATION_CONDITIONS" : {
-                "string" : {
-                  "_0" : "$(inherited) SWIFT_PACKAGE"
                 }
               },
               "FRAMEWORK_SEARCH_PATHS" : {
@@ -330,9 +247,47 @@
                   ]
                 }
               },
-              "ENABLE_STRICT_OBJC_MSGSEND" : {
+              "ALWAYS_SEARCH_USER_PATHS" : {
+                "string" : {
+                  "_0" : "YES"
+                }
+              },
+              "GCC_PREPROCESSOR_DEFINITIONS" : {
+                "array" : {
+                  "_0" : [
+                    "$(inherited)",
+                    "SWIFT_PACKAGE=1"
+                  ]
+                }
+              },
+              "CLANG_ENABLE_OBJC_WEAK" : {
                 "string" : {
                   "_0" : "NO"
+                }
+              },
+              "GCC_NO_COMMON_BLOCKS" : {
+                "string" : {
+                  "_0" : "NO"
+                }
+              },
+              "GCC_WARN_INHIBIT_ALL_WARNINGS" : {
+                "string" : {
+                  "_0" : "YES"
+                }
+              },
+              "CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER" : {
+                "string" : {
+                  "_0" : "NO"
+                }
+              },
+              "USE_HEADERMAP" : {
+                "string" : {
+                  "_0" : "NO"
+                }
+              },
+              "SWIFT_ACTIVE_COMPILATION_CONDITIONS" : {
+                "string" : {
+                  "_0" : "$(inherited) SWIFT_PACKAGE"
                 }
               }
             },
@@ -343,21 +298,86 @@
                 ]
               }
             }
-          },
-          "deploymentTargets" : {
-            "iOS" : "11.0"
-          },
-          "coreDataModels" : [
+          }
+        }
+      ],
+      "resourceSynthesizers" : [
+        {
+          "parserOptions" : {
 
+          },
+          "template" : {
+            "defaultTemplate" : {
+              "_0" : "Strings"
+            }
+          },
+          "extensions" : [
+            "stringsdict",
+            "strings"
           ],
-          "filesGroup" : {
-            "group" : {
-              "name" : "Project"
+          "parser" : "strings"
+        },
+        {
+          "extensions" : [
+            "xcassets"
+          ],
+          "template" : {
+            "defaultTemplate" : {
+              "_0" : "Assets"
+            }
+          },
+          "parserOptions" : {
+
+          },
+          "parser" : "assets"
+        },
+        {
+          "parserOptions" : {
+
+          },
+          "parser" : "plists",
+          "template" : {
+            "defaultTemplate" : {
+              "_0" : "Plists"
+            }
+          },
+          "extensions" : [
+            "plist"
+          ]
+        },
+        {
+          "parserOptions" : {
+
+          },
+          "extensions" : [
+            "otf",
+            "ttf",
+            "ttc"
+          ],
+          "parser" : "fonts",
+          "template" : {
+            "defaultTemplate" : {
+              "_0" : "Fonts"
             }
           }
         }
       ],
-      "lastUpgradeCheck" : "99.9.9"
+      "lastUpgradeCheck" : "99.9.9",
+      "path" : "\/Users\/ivan\/Desktop\/TSAMOBILE\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/Swinject",
+      "sourceRootPath" : "\/Users\/ivan\/Desktop\/TSAMOBILE\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/Swinject",
+      "options" : {
+        "automaticSchemesOptions" : {
+          "disabled" : {
+
+          }
+        },
+        "disableBundleAccessors" : false,
+        "disableShowEnvironmentVarsInScriptPhases" : false,
+        "disableSynthesizedResourceAccessors" : true,
+        "textSettings" : {
+
+        }
+      }
     }
   ]
 }

@@ -17,11 +17,12 @@ let project = Project(
     targets: [
         Target(name: projectName,
                platform: .iOS,
-               product: .framework,
+               product: .staticFramework,
                bundleId: moduleBaseId,
                deploymentTarget: target,
                sources: ["Source/**"],
-               dependencies: [/*.project(target: "Common", path: .relativeToRoot("Core/Common"))*/],
+               dependencies: [
+                .project(target: "Common", path: .relativeToRoot("Core/Common"))],
                settings: configSettings())
     ]
 )

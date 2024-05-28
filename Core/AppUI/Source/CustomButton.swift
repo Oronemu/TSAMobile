@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-public struct CustomButton: View {
+public struct TSAButton: View {
     
     private var placeholder: String
     private var perform: () -> Void
@@ -33,5 +33,5 @@ public struct CustomButton: View {
 }
 
 #Preview {
-    CustomButton(placeholder: "dwadaw", perform: {})
+    TSAButton(placeholder: "dwadaw", perform: {})
 }

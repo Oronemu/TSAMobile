@@ -1,8 +1,8 @@
 //
 //  ApplicationError.swift
-//  GigaChat
+//  Common
 //
-//  Created by Ivan on 29.12.2023.
+//  Created by Ivan on 28.05.2024.
 //
 
 import Foundation
@@ -11,8 +11,8 @@ public protocol ApplicationError: Error {
     
     var title: String { get }
     var message: String { get }
-    var log: String { get }
     var code: Int  { get }
+    var detail: Detail? { get }
 }
 
 extension ApplicationError {
@@ -25,11 +25,11 @@ extension ApplicationError {
         return ""
     }
     
-    public var log: String {
-        return ""
-    }
-    
     public var code: Int  {
         return -1
+    }
+    
+    public var detail: Detail? {
+        return nil
     }
 }

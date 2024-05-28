@@ -11,8 +11,6 @@ import AppUI
 struct AuthScreen<ViewModel: AuthScreenViewModelProtocol>: View {
     @StateObject var viewModel: ViewModel
 
-    @State private var name: String = ""
-    @State private var password: String = ""
     @State private var isSecure: Bool = true
 
     var body: some View {
@@ -29,13 +27,13 @@ struct AuthScreen<ViewModel: AuthScreenViewModelProtocol>: View {
                     .frame(height: 250, alignment: .top)
                     .padding(.bottom, 50)
                 
-                CustomTextField(placeholder: "Имя пользователя", value: $name)
+                TSATextField(placeholder: "Имя пользователя", value: $viewModel.name)
         
-                SecureTextField(value: $password, isSecure: $isSecure, placeholder: "Пароль")
+                TSASecureTextField(value: $viewModel.password, isSecure: $isSecure, placeholder: "Пароль")
                 
                 
 
-                CustomNavigationLink(placeholder: "Войти", destination: viewModel.openMain())
+                TSANavigationLink(placeholder: "Войти", destination: viewModel.openMain())
                 
                 Spacer()
             }

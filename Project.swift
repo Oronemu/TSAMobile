@@ -25,9 +25,9 @@ let project = Project(
         .project(target: "Authentification", path: .relativeToRoot("Features/Authentification")),
         .project(target: "Analyze", path: .relativeToRoot("Features/Analyze")),
         .project(target: "Profile", path: .relativeToRoot("Features/Profile")),
-        .project(target: "Splash", path: .relativeToRoot("Features/Splash")),
         .project(target: "Intro", path: .relativeToRoot("Features/Intro"))
       ]
+//      ,
 //      settings: configSettings()
     )]
 )

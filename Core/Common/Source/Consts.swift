@@ -21,6 +21,7 @@ public class ConstStatus {
     public static let isOnBoardingShowed = "is_onboarding_showed"
 }
 
-public class ConstUser {
+public class ConstToken {
     public static let token = "token"
+    public static let refreshToken = "refreshToken"
 }

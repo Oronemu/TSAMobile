@@ -6,13 +6,46 @@
 //
 
 import Foundation
+import Common
 
 public protocol NetworkManager {
-    func request<Request: DataRequest>(_ request: Request) async throws -> Request.Response
-    func requestSocket<Request: WebSocketRequest>(_ request: Request) async throws -> Request.Response
+    func request<Request: DataRequest>(_ request: Request, allowRetry: Bool) async throws -> Request.Response
+    func webScoketRequest<Request: WebSocketRequest>(_ request: Request) async throws -> Request.Response
 }
 
-public class DefaultNetworkManager: NetworkManager {
+
+public class DefaultNetworkManager: NetworkManager  {
+    
+    private let provider: HTTPClient
+    
+    public init() {
+        self.provider = HTTPClient()
+    }
+
+    public func request<Request: DataRequest>(_ request: Request, allowRetry: Bool = true) async throws -> Request.Response {
+        
+        let result = try await provider.request(request, allowRetry: true)
+        switch result {
+        case .success(let value):
+            return value
+        case .failure(let applicationError):
+            throw applicationError
+        }
+    }
+    
+    public func webScoketRequest<Request: WebSocketRequest>(_ request: Request) async throws -> Request.Response {
+        let result = try await provider.requestSocket(request)
+        switch result {
+        case .success(let value):
+            return value
+        case .failure(let applicationError):
+            throw applicationError
+        }
+    }
+}
+
+
+public class HTTPClient {
     private var session: URLSession
     private var webSocketTask: URLSessionWebSocketTask?
 
@@ -22,8 +55,9 @@ public class DefaultNetworkManager: NetworkManager {
         session = URLSession(configuration: config)
     }
     
-    public func request<Request>(_ request: Request) async throws -> Request.Response where Request : DataRequest {
-        
+    public func request<Request>(_ request: Request, allowRetry: Bool = true) async throws -> Result<Request.Response, NetworkError> where Request : DataRequest  {
+        var (data, response): (Data, URLResponse)
+
         guard var urlComponent = URLComponents(string: request.url) else {
             let error = NSError(domain: "InvalidEndpoint", code: 404)
             throw NSError(domain: "A", code: 1)
@@ -47,17 +81,25 @@ public class DefaultNetworkManager: NetworkManager {
         urlRequest.httpMethod = request.method.rawValue
         urlRequest.allHTTPHeaderFields = request.headers
         
-        do {
-            let (data, _) = try await session.data(for: urlRequest)
-            let decodedReponse = try request.decode(data)
-            
-            return decodedReponse
-        } catch {
-            throw NSError(domain: "B", code: 2)
+        (data, response) = try await session.data(for: urlRequest)
+        
+        guard let response = response as? HTTPURLResponse else { return .failure(NetworkError.httpRequestNotFound) }
+
+        if response.statusCode == 401 {
+            let error = NetworkError.invalidToken(reason: "Код 401 invalid token")
+            return .failure(error)
         }
+        
+        guard (200...299).contains(response.statusCode) else {
+            let error = NetworkError.httpErrorWithServer
+            return .failure(error)
+        }
+        
+        let decodedResponse = try request.decode(data)
+        return .success(decodedResponse)
     }
     
-    public func requestSocket<Request>(_ request: Request) async throws -> Request.Response where Request: WebSocketRequest {
+    public func requestSocket<Request>(_ request: Request) async throws -> Result<Request.Response, NetworkError> where Request: WebSocketRequest {
             guard let url = URL(string: request.url) else {
                 throw NSError(domain: "InvalidEndpoint", code: 404)
             }
@@ -70,7 +112,7 @@ public class DefaultNetworkManager: NetworkManager {
 
             let response = try await receiveMessage()
             let decodedResponse = try request.decode(response)
-            return decodedResponse
+            return .success(decodedResponse)
         }
 
     private func receiveMessage() async throws -> Data {

@@ -156,7 +156,7 @@
 				};
 			};
 			buildConfigurationList = 551B4BA9B726000A879FF2A0 /* Build configuration list for PBXProject "Splash" */;
-			compatibilityVersion = "Xcode 13.0";
+			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (

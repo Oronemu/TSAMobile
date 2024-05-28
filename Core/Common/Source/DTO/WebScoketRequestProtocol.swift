@@ -1,8 +1,8 @@
 //
-//  WebSocketRequestProtocol.swift
-//  NetworkProvider
+//  WebScoketRequestProtocol.swift
+//  Common
 //
-//  Created by Ivan on 27.05.2024.
+//  Created by Ivan on 28.05.2024.
 //
 
 import Foundation

@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-public struct SecureTextField: View {
+public struct TSASecureTextField: View {
     @Binding private var value: String
     @Binding private var isSecure: Bool
     private var placeholder: String
@@ -47,5 +47,5 @@ public struct SecureTextField: View {
 }
 
 #Preview {
-    SecureTextField(value: .constant(""), isSecure: .constant(true), placeholder: "")
+    TSASecureTextField(value: .constant(""), isSecure: .constant(true), placeholder: "")
 }
